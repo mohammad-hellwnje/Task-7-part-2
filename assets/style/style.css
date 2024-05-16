@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.hero {
+    height: 100vh;
+    padding: 0px 100px;
+    background-color: red;
+}
+.hero .div1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.hero .div1 .text {
+   width: 500px;
+   color: white;
+}
+.hero .div1 .text h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.hero .div1 .text p {
+    font-size: 18px;
+    margin: 25px 0 ;
+    line-height: 1.5;
+}
+.hero .div1 .image img {
+  width:250px ;
+}
+.hero .div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .div2 img {
+    width: 80px;
+    cursor: pointer;
+   
+}
+.hero .div2 img:hover {
+    transform: translateY(-8px);
+    transition: .4s;
+}
+.task2 {
+    height: 100vh;
+    padding: 30px 100px;
+}
+.task2 .content1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 90%;
+}
+.task2 .content1 h2 {
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 35px;
+}
+.task2 .content1 p {
+    line-height: 1.7;
+    font-size: 18px;
+}
+.task2 .icon i {
+    font-size: 35px;
+    cursor: pointer;
+}
+.bgcolor {
+    background-color: black;
+    color: white;
+}
+.task3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0 100px;
+} 
+.task3 .item {
+    width: 100%;
+}
+.task3 .item .div1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(222, 244, 205);
+    padding: 25px 10px;
+    margin: 15px 0;
+    cursor: pointer;
+
+}
+.task3 .item .div1 i {
+    cursor: pointer;
+    font-size: 25px;
+}
+.div-content {
+    display: none;
+    padding:  10px;
+    
+}
+.task4 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(2,56, 82);
+}
+.task4 h2 {
+    margin-bottom:30px ;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+}
+.task4 .star-icon {
+    margin-bottom: 30px;
+}
+.task4 .star-icon i {
+    font-size: 30px;
+    padding: 0 8px;
+    cursor: pointer;
+}
+.task4 p {
+    font-size: 20px;
+    color: white;
+}
+.task4 .star-icon i.active {
+    color: gold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width :768px) {
+    .hero {
+        height: 100%;
+        padding: 30px 50px;
+    }
+    .hero .div1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero .div1 .text {
+        text-align: center;
+    }
+    .hero .div2 {
+        flex-wrap: wrap;
+    }
+    .task2 {
+        padding: 20px 30px;
+    }
+    .task3 {
+        padding: 0 15px;
+    }
+}
+@media (min-width:992px) {
+    .task2 .content p {
+        padding: 0px 60px;
+    }
+}
+@media(max-width : 567px) {
+    .task2 .content h2 {
+        font-size: 33px;
+        margin-bottom: 20px;
+    }
+    .task2 .content p {
+        font-size: 16px;
+    }
+    .task4 h2 {
+        font-size: 30px;
+        padding: 0 10px;
+    }
+}
